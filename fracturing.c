@@ -101,7 +101,7 @@ printf("The width of the city encompassed by your request is %.2f\n", width);
 // Difficulty level (example: set to 2.0 for demonstration) return 2.0; 
 return 2.000;
 }   
-calculateHeight(  y1,   y2);
+calculateHeight( int y1, int y2);
  { height = fabs(y2 - y1); 
 printf("Point #1 entered: y1 = %.2f\n", y1); 
 printf("Point #2 entered: y2 = %.2f\n", y2); 
