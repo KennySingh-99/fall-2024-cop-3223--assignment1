@@ -10,7 +10,7 @@
 // Use the printf function to display output to the user.
 // Use scanf 
 // Write a complete C program that interacts with the user via the terminal.
-// Input: None
+// Input: User's 1(X,Y) and 2(X,Y)
 //
 // Output: (to the command line) A breif Message
 // //********************************************************
@@ -29,14 +29,15 @@
   askForUserInput(); 
 
 int main(int argc, char **argv) 
-{ // Just a placeholder to fulfill the requirement return 1; }
-return 1;
- askForUserInput();
- int value;
+
+return 1.0000;
+
+askForUserInput();
+{double value;
 printf("Enter a value: "); 
 scanf("%lf", &value);
 return value; }
-double void askForUserInput(double *x1, double *x2, double *y1, double *y2) 
+double void askForUserInput(double x1, double x2, double y1, double y2);
 {
     printf("Enter x1 and y1: ");
     scanf("%lf %lf", x1, y1);
@@ -86,20 +87,17 @@ double calculateCircleArea(double x1, double x2, double y1, double y2)
     double radius = calculateDistance(x1, x2, y1, y2);
     return M_PI * radius * radius;  }
     // Area formula: π * r^2
-
    
-{printf("The area of the circle is %.2f\n", area);
+{ printf("The area of the circle is %.2f\n", area);
 printf("Point #2 entered: x2 = %.2f; y2 = %.2f\n", x2, y2); 
 printf("The area of the city encompassed by your request is %.2f\n", area); 
-// Difficulty level (example: set to 3.0 for demonstration) return 3.0; 
 return 3.000;
-}   
+   }
 calculateWidth( x1,   x2);
 {   width = fabs(x2 - x1); 
 printf("Point #1 entered: x1 = %.2f\n", x1); 
 printf("Point #2 entered: x2 = %.2f\n", x2); 
-printf("The width of the city encompassed by your request is %.2f\n", width); 
-// Difficulty level (example: set to 2.0 for demonstration) return 2.0; 
+printf("The width of the city encompassed by your request is %.2f\n", width);  
 return 2.000;
 }   
 calculateHeight( int y1, int y2);
@@ -107,5 +105,5 @@ calculateHeight( int y1, int y2);
 printf("Point #1 entered: y1 = %.2f\n", y1); 
 printf("Point #2 entered: y2 = %.2f\n", y2); 
 printf("The height of the city encompassed by your request is %.2f\n", height); 
-return 2.000;}
-// Difficulty level (example: set to 2.0 for demonstration) return 2.0; }
+return 2.000;
+}
